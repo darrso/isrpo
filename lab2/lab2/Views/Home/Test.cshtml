@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Test</title>
+</head>
+<body>
+    <div> 
+        @ViewBag.Greeting
+        <br />
+        @foreach(string a in ViewBag.Spisok)
+        {
+            <p>@a</p>
+        }
+    </div>
+</body>
+</html>

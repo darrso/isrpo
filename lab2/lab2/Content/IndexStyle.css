@@ -1,0 +1,21 @@
+﻿body {
+    background-color:wheat;
+}
+.cafe_name{
+    text-align: center;
+    color:black;
+    font-family:Rockwell;
+    text-decoration:underline;
+    font-size: 40px;
+    font-weight: bold;
+}
+.menu_name{
+    text-align: center;
+}
+.action_links {
+    text-align: center;
+    color:red;
+    font-size: 30px;
+    text-decoration:none;
+}
+

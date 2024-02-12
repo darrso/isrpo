@@ -1,0 +1,26 @@
+﻿@{
+    Layout = null;
+}
+@using lab2.Models
+@model lab2.Models.DrinkData
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="~/Content/DrinksStyle.css"/>
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary()
+        <p>
+            Drink Type: @Html.DropDownListFor(m => m.DrinkTypeEn, new SelectList(Enum.GetValues(typeof(DrinkType))))
+        </p>
+        <p>Milk: @Html.TextBoxFor(x=>x.Milk)</p>
+        <p>Sugar: @Html.TextBoxFor(x => x.Sugar)</p>
+        <input type="submit" value="Ok"/>
+    }
+</body>
+</html>
